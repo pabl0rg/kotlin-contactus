@@ -27,13 +27,14 @@ val p = project {
     }
 
     dependencies {
-        compile("com.typesafe:config:1.2.1",
+        compile("com.github.xenomachina:kotlin-argparser:1.1.0",
                 "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:jar:0.14.1",
                 "org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.1",
-                "org.jetbrains.kotlin:kotlin-reflect:1.1.1",
                 "org.jetbrains.ktor:ktor-netty:0.3.1",
                 "org.jetbrains.ktor:ktor-locations:0.3.1",
-                "org.tinylog:slf4j-binding:1.2")
+                "org.tinylog:slf4j-binding:1.2",
+                "com.squareup.retrofit2:retrofit:2.2.0",
+                "com.squareup.retrofit2:converter-gson:jar:2.2.0")
     }
 
     dependenciesTest {
